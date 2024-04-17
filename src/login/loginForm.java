@@ -156,7 +156,8 @@ public static boolean loginAcc(String username, String password){
     }//GEN-LAST:event_passActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      if(loginAcc(user.getText(), pass.getText())){
+
+   if(loginAcc(user.getText(), pass.getText())){
        JOptionPane.showMessageDialog(null, "Login Success!");
         adminDashboard ads = new adminDashboard();
      ads.setVisible(true);
@@ -165,7 +166,8 @@ public static boolean loginAcc(String username, String password){
       JOptionPane.showMessageDialog(null, "Invalid Account!");
 }    
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
            registerform lfr = new registerform();
        lfr.setVisible(true);
